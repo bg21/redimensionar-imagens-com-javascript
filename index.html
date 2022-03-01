@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Resize Imagens</title>
+</head>
+<body>
+    <div class="resizer">
+        <input type="file" class="resizer__file">
+        <div class="dimensions">
+          <input type="text" class="resizer__input resizer__input--width" value="0">
+          x
+          <input type="text" class="resizer__input resizer__input--height" value="0">
+          <label>
+            <input type="checkbox" class="resizer__aspect" checked>
+            Manter a Proporção
+          </label>
+        </div>
+        <canvas class="resizer__canvas" width="500" height="500"></canvas>
+      </div>
+
+      <script src="js/file.js"></script>
+</body>
+</html>
